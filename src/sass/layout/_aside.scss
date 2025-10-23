@@ -1,0 +1,59 @@
+
+@use '../abstracts/abstracts' as v;
+
+.testy {
+    display: flex;
+    gap: 65px;
+    flex-direction: column;
+
+    position: relative;
+    bottom: 1013px;
+    left: 1293px;
+    z-index: 2;
+    overflow: visible;
+
+    .article {
+
+        padding: 24px;
+        position: relative;
+        z-index: 3;
+
+
+        &::before {
+            content:"";
+            position: absolute;
+            inset: 0;
+            background-color: white;
+            opacity: 0.5;
+            border-radius: 16px;
+            z-index: -1;
+        }
+
+        &:first-child {
+            width: 360px;
+            height: 200px;
+        }
+
+        &:last-child {
+            width: 355px;
+            height: 200px;
+            right: 130px;
+        }
+
+        img {
+            margin-bottom: 8px;
+        }
+    
+        p {
+            @include v.apply_font(v.$font_p--aside);
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+    
+        h4 {
+            @include v.apply_font(v.$font_h4--aside);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

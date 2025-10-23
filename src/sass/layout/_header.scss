@@ -1,0 +1,28 @@
+
+@use '../abstracts/abstracts' as v;
+
+header {
+    margin-top: 16px;
+    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    figure a img:hover {
+        transform: scale(1.15);
+        transition: 0.5s ease;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

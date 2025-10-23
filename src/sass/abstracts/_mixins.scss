@@ -1,0 +1,55 @@
+
+@use './variables' as v;
+@use 'sass:map'; //permite utilizar la norma 'map.get' y 'map.has-key' (moderna)
+
+@mixin breakpoint($bp) {
+
+  @if $bp == tablet {
+    @media (min-width: v.$bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: v.$bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: v.$bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: v.$bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin reset_ul { // resetea el formato de list-style
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin apply_font($font-map) { // Aplica los estilos tipográficos
+  font-family: map.get($font-map, family);
+  font-style: map.get($font-map, style);
+  font-weight: map.get($font-map, weight);
+  font-size: map.get($font-map, size);
+  line-height: map.get($font-map, line-height);
+  color: map.get($font-map, color);
+
+  // Solo aplica line-height si existe en el mapa
+  @if map.has-key($font-map, line-height) {
+    line-height: map.get($font-map, line-height);
+  }
+
+  // Solo aplica color si existe
+  @if map.has-key($font-map, color) {
+    color: map.get($font-map, color);
+  }
+}

@@ -1,0 +1,37 @@
+/* -- BreakPoints -- */
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+
+
+/* -- Colors -- */
+
+$darkblue: #264065;
+$grey: #909090;
+$cyan: #A9D6CB;
+$black: #070D15;
+$white: #FFFFFF;
+
+/* 
+    -- Tipografía -- SON FUENTES --> MIXIN --> @INCLUDE
+    
+    title buttons: $_auxiliars
+    
+*/
+
+$menu_font: (family: 'Poppins', style: normal, weight: 400, size: 18px,color: $darkblue);
+$menu_font--auxiliar: (family: 'Nunito Sans', style: normal, weight: 400, size: 16px, color: $darkblue);
+$user_font: (family:'Nunito Sans', style: normal, weight: 400, size: 16px, line-height: 40px, color: $darkblue);
+$user_font--auxiliar: (family: 'Poppins, sans-serif', style: normal, weight: 400, size: 18px, color: $white);
+
+$font_h1--title: (family:'Poppins', style:normal,weight:700,size:64px,line-height:80px, color:$darkblue);
+$font_h2--title: (family:'Poppins', style:normal,weight:400,size:24px,line-height:40px, color:$grey);
+$font_h3--title: (family:'Poppins', style:normal,weight:400,size:18px,color:$grey);
+$font_p--title: (family:'Poppins', style:normal,weight:500,size:36px,color:$darkblue);
+
+$font_p--aside: (family:'Poppins', style:normal,weight:400,size:18px,color:$black);
+$font_h4--aside: (family:'Poppins', style:normal,weight:700,size:18px,color:$darkblue);
+
+
+

@@ -1,0 +1,18 @@
+
+.container {
+
+    max-width: 1700px;  //no siendo responsive, que no se mueva
+    min-width: 1700px;
+    max-height: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-image: url(/img/background/beauty-woman.png), url(/img/background/spa.svg), url(/img/background/Rectangle\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: 90%, 30%, 33%;    
+    background-position-x: 233px,1060px, right;
+    background-position-y: -30px,45px,top;
+}

@@ -1,0 +1,104 @@
+@use '../abstracts/abstracts' as v;
+
+
+nav {   
+
+    ul {
+        @include v.reset_ul;
+    }
+        
+        li a {
+            text-decoration: none;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+
+}
+
+
+.principal_menu {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+        li a {
+            @include v.apply_font(v.$menu_font)
+        }
+
+        li:last-child {
+            margin-right: 240px;
+        }
+
+        li:last-child:hover {
+            transform: translateY(15px);
+            transition: 0.5s ease-in-out;
+        }
+
+        li:last-child a {
+            @include v.apply_font(v.$menu_font--auxiliar)
+        }
+
+        li:last-child img {
+            width: 15px;
+            height: 15px;
+        }
+}
+
+.user_menu {
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }   
+    
+        li:last-child {
+            margin-right: 160px;
+        }
+        
+        li:first-child img {
+            width: 24px;
+            height: 24px;
+        }
+
+        li:first-child img:hover {
+            transform: scale(1.5);
+            transform: rotateZ(35deg);
+            transition: 0.5s ease-in-out;
+        }
+
+        li:nth-child(2) img {
+            width: 21.33px;
+            height: 26.67px;
+        }
+
+        li:nth-child(2) img:hover {
+            transform: scale(1.5);
+            transform: rotateZ(-35deg);
+            transition: 0.5s ease-in-out;
+        }
+
+        li:nth-last-child(2) a {
+            @include v.apply_font(v.$menu_font--auxiliar);
+        }
+
+        li:last-child a {
+            @include v.apply_font(v.$menu_font);
+            padding: 16.5px 40.5px;
+            background-color: v.$darkblue;
+            color: v.$white;
+            border-radius: 32px;
+        }
+
+        li:last-child a:hover {
+            color: v.$darkblue;
+            background-color: v.$white;
+            box-shadow: 6px 10px 5px;
+            transition: 0.5s ease;
+        }
+}
