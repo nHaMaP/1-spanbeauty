@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/nHaMaP/1-spanbeauty#readme",
   "devDependencies": {
+    "sass-embedded": "^1.93.2",
     "vite": "^7.1.12"
   }
 }
