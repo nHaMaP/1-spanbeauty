@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",    
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,13 +22,8 @@
   },
   "homepage": "https://github.com/nHaMaP/1-spanbeauty#readme",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass-embedded": "^1.93.2",
     "vite": "^7.1.12"
-  },
-
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
   }
 }
