@@ -1,0 +1,23 @@
+{
+  "name": "01-spanbeauty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nHaMaP/1-spanbeauty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nHaMaP/1-spanbeauty/issues"
+  },
+  "homepage": "https://github.com/nHaMaP/1-spanbeauty#readme",
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+}
